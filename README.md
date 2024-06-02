@@ -9,6 +9,8 @@ Learn about well-organized infrastructure-as-code by doing. Build my own system 
 
 ## aztf.bootstrapper
 
+https://github.com/andrewtyped/aztf.bootstrapper
+
 Contains PowerShell for provisioning:
 
 - a new resource group 
@@ -19,7 +21,10 @@ This resource group will be responsible for hosting tfstate that tracks all reso
 
 ## aztf.subscriptionRoot
 
+https://github.com/andrewtyped/aztf.subscriptionRoot
+
 Contains terraform for provisioning other resource groups in the subscription. Each resource group will be provisioned with:
 
 - A storage account and container for tfstate
 - a service principal with federated credential for accessing the tfstate.
+- An Azure DevOps service connection for using the service principal at deploy time.
